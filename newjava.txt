@@ -1,0 +1,49 @@
+package myproject;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class StudentArrayeg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		int n, total=0, percentage;
+		
+		Scanner s= new Scanner(System.in);
+		
+		System.out.println("Enter Rollno=");
+		int a = s.nextInt();
+		
+		Scanner cn= new Scanner(System.in);  /// for string creadted seperate scanner
+		System.out.println(" name=");
+		String b= cn.nextLine();
+		
+		System.out.println("Enter Number of subject=");
+		n = s.nextInt();
+		
+		int marks[] = new int[n];
+		System.out.println("Enter mark=");
+		
+		for(int i= 0; i<n;i++)
+		{
+			marks[i] = s.nextInt();
+			total= total+marks[i];
+			
+		}
+		
+		percentage = total/n;
+		System.out.println(" Rollno=" + a);
+		System.out.println(" name=" + b);
+		System.out.println("sum =" + total);
+		System.out.println("percentage" + percentage);
+		
+		
+		
+		
+	}
+
+}
